@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="340dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/coins" />
+
+    <TextView
+        android:id="@+id/couns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="25dp"
+        android:text="50"
+        android:textColor="@color/purple_500"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/couns"
+        android:layout_marginLeft="300dp"
+        android:text="points"
+        android:textColor="@color/purple_200"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/h1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="25dp"
+        android:text="Home"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <ViewFlipper
+        android:id="@+id/fliper"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="160dp"
+        android:padding="10dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="45dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="26dp"
+        app:srcCompat="@drawable/pincode" />
+
+    <TextView
+        android:id="@+id/des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/h1"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="0dp"
+        android:text="Rohini, Delhi"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/des"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/search_barbg"
+        android:drawableLeft="@android:drawable/ic_menu_search"
+        android:drawablePadding="15dp"
+        android:hint="Search Cuisines"
+        android:inputType="textPersonName"
+        android:textSize="25sp"
+        tools:ignore="TouchTargetSizeCheck" />
+
+
+</RelativeLayout>
